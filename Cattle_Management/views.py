@@ -35,7 +35,6 @@ def create_cattle(request):
         try:
             new_cattle = Cattle.objects.create(
                 name=data['name'],
-                date_of_birth=data['date_of_birth'],
                 father=data['father'],
                 mother=data['mother']
             )
