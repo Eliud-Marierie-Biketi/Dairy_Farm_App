@@ -20,11 +20,11 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('Cattle_Management.urls')),
-    # path('ai/', include('Artificial_Insemination.urls')),
-    # path('production/', include('Production_Management.urls')),
-    # path('sales/', include('Sales_Management.urls')),
-    # path('inventory/', include('Inventory_Management.urls')),
-    # path('users/', include('User_Management.urls')),
+    path('', include('Artificial_Insemination.urls')),
+    path('', include('Production_Management.urls')),
+    path('', include('Sales_Management.urls')),
+    path('', include('Inventory_Management.urls')),
+    path('', include('User_Management.urls')),
     #Add other applications as needed
 ]
 
